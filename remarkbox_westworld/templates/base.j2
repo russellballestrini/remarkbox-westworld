@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{% block title %}{{ request.server_name }}{% endblock %}</title>
+  <meta charset="utf-8" />
+
+
+  <script type="text/javascript" src="/static/js/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="/static/js/custom.js"></script>
+  <script type="text/javascript" src="/static/js/iframe-resizer/iframeResizer.contentWindow.min.js"></script>
+
+  <link rel="stylesheet" href="/static/css/common.css">
+  {% block stylesheets -%}
+  <link rel="stylesheet" href="/static/css/embed.css">
+  {%- endblock %}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700">
+  <link rel="stylesheet" href="/static/theme/css/westworld.css">
+  <link rel="stylesheet" href="/static/css/pygments.css">
+</head>
+
+<body>
+
+<div id="alerts">
+{%- for message, level in request.session.pop_flash() %}
+<div class="alert alert-{{level}}" onclick="this.style.display='none'" name="alert">
+    <label class="close" alt="dismiss" title="dismiss">x</label>
+    {{message}}
+</div>
+{%- endfor %}
+</div>
+
+
+<h1 class="brand"><a href="/">
+WESTWORLD <span style="font-size: .5em; letter-spacing: 5px;">Forum</span></a>
+</h1>
+
+<div id="remarkbox-menu">
+{%- block menu %}
+  <a href="/">home</a> |
+  <a href="/new">new thread</a> |
+
+  {%- if request.user %}
+  {{request.user.name}} <a href="/logout">[logout]</a>
+  {% else %}
+  <a href="/login-or-register">login-or-register</a>
+  {%- endif %}
+{%- endblock %}
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="main">
+{% block content %}
+{% endblock %}
+</div>
+
+<div id="remarkbox-footer">
+  <br />
+</div>
+
+</body>
+</html>
