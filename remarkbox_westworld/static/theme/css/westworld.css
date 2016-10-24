@@ -28,11 +28,11 @@ a:hover {
   opacity: 1.0;
 }
 
-ul { 
+ul.summery { 
   list-style: none;
 }
 
-li {
+li.summery {
   margin-bottom: 10px;
 }
 
