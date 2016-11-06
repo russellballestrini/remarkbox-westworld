@@ -28,8 +28,9 @@ a:hover {
   opacity: 1.0;
 }
 
-ul { 
+ul.summery { 
   list-style: none;
+  padding-left: 20px;
 }
 
 li {
@@ -75,7 +76,7 @@ li {
   opacity: .70;
 }
 
-.textarea_remark, #thread_title_input, #email_input, #email_input2 {
+input, .textarea_remark, #thread_title_input, #email_input, #email_input2 {
   color: #ffffff;
   background-color: #203342;
   border-color: #203342;
@@ -114,4 +115,8 @@ li {
 
 .alert-success, .alert-notice {
   background-color: #517DA4;
+}
+
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  .mobile-hide{ display: none; }
 }
