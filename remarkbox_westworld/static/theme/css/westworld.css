@@ -28,12 +28,12 @@ a:hover {
   opacity: 1.0;
 }
 
-ul.summery { 
+ul.summary { 
   list-style: none;
   padding-left: 20px;
 }
 
-li.summery {
+li.summary {
   margin-bottom: 10px;
 }
 
