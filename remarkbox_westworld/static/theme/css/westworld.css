@@ -43,12 +43,18 @@ li.summary {
   opacity: 1.0;
 }
 
-.brand {
+h1.brand {
   color: white;
   font-weight: bold;
   letter-spacing: 10px;
   font-size: 2.5em; 
   font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+}
+
+.searchbox {
+  float: right;
+  margin-bottom: 20px;
 }
 
 .title {
