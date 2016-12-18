@@ -28,12 +28,12 @@ a:hover {
   opacity: 1.0;
 }
 
-ul.summery { 
+ul.summary { 
   list-style: none;
   padding-left: 20px;
 }
 
-li.summery {
+li.summary {
   margin-bottom: 10px;
 }
 
@@ -43,12 +43,18 @@ li.summery {
   opacity: 1.0;
 }
 
-.brand {
+h1.brand {
   color: white;
   font-weight: bold;
   letter-spacing: 10px;
   font-size: 2.5em; 
   font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+}
+
+.searchbox {
+  float: right;
+  margin-bottom: 20px;
 }
 
 .title {
