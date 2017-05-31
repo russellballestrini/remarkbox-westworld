@@ -84,8 +84,7 @@ h1.brand {
   margin: auto;
   border-radius: 6px;
   padding: 16px;
-  /*background: rgba(14, 21, 29, .95);*/
-  background: rgb(14, 21, 29);
+  background: rgba(14, 21, 29, .97);
 }
 
 .poweredby {
