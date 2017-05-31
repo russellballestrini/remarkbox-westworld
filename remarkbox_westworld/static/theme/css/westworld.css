@@ -11,7 +11,9 @@ body {
   background-position: center -120px;
   background-attachment: local;
 
-  margin: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
   font-family: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
