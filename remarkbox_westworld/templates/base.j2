@@ -56,9 +56,9 @@ WESTWORLD <span style="font-size: .5em; letter-spacing: 5px;" class="mobile-hide
   <a href="/new">new thread</a> |
 
   {%- if request.user %}
-  {{request.user.name}} <a href="/logout">[logout]</a>
+  {{request.user.name}} <a href="/log-out">[log out]</a>
   {% else %}
-  <a href="/login-or-register">login-or-register</a>
+  <a href="/join-or-log-in">join-or-log-in</a>
   {%- endif %}
 {%- endblock %}
 </div>
