@@ -11,4 +11,4 @@ Include in your remarkbox .ini file using:
 
 .. code-block:: bash
 
-  app.theme = remarkbox_westworld
+  app.theme = westworld
