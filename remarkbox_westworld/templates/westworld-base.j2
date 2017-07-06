@@ -8,23 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#030408">
 
-    <!-- this is needed for async javascript requests -->
-  <script type="text/javascript">var csrf_token = "{{ request.session.get_csrf_token() }}";</script>
+  {% include 'snippets/stylesheet-includes.j2' %}
 
-  <script type="text/javascript" src="/static/js/jquery-2.1.3.min.js"></script>
-  <script type="text/javascript" src="/static/js/custom.js"></script>
-  <script type="text/javascript" src="/static/js/iframe-resizer/iframeResizer.contentWindow.min.js"></script>
-
-  <link rel="stylesheet" href="/static/css/pygments.css">
-  <link rel="stylesheet" href="/static/css/common.css">
-  {% block stylesheets -%}
-  <link rel="stylesheet" href="/static/css/embed.css">
-  {%- endblock %}
   <link rel="stylesheet" href="/static/theme/westworld/css/theme.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700">
-  
-  {% include 'snippets/google-analytics.j2' %}
 
+  {% include 'snippets/javascript-includes.j2' %}
+  
 </head>
 
 <body>
