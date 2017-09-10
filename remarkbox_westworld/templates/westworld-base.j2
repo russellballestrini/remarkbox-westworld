@@ -1,3 +1,4 @@
+{%- import 'snippets/snippets.j2' as snippets with context -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,7 +49,7 @@ WESTWORLD <span style="font-size: .5em; letter-spacing: 5px;" class="mobile-hide
   <a href="/new">new thread</a> |
 
   {%- if request.user %}
-  {{request.user.name}} <a href="/log-out">[log out]</a>
+  {{ snippets.user_link(request.user) }} <a href="/log-out">[log out]</a>
   {% else %}
   <a href="/join-or-log-in">join-or-log-in</a>
   {%- endif %}
