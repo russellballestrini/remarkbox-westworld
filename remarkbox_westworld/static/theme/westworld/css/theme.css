@@ -90,7 +90,7 @@ h1.brand {
   opacity: .70;
 }
 
-input, .textarea_remark, #thread_title_input, #email_input, #email_input2 {
+input, .common-textarea, #thread_title_input, #email_input, #email_input2 {
   color: #ffffff;
   background-color: #203342;
   border-color: #203342;
