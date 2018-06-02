@@ -26,14 +26,7 @@
   </style>
 </noscript>
 
-<div id="alerts">
-{%- for message, level in request.session.pop_flash() %}
-<div class="alert alert-{{level}}" onclick="this.style.display='none'" name="alert">
-    <label class="close js-only" alt="dismiss" title="dismiss">x</label>
-    {{message}}
-</div>
-{%- endfor %}
-</div>
+{% include 'snippets/flash-alerts.j2' %}
 
 <div class="searchbox">
   {% include 'snippets/search.j2' %}
